@@ -2020,7 +2020,7 @@ One way to resolve this is to simply add another rule, such as the following for
 \end{mathpar}
 (The rule for $\neg A$ derived from $\To$ is the form of ``proof by contradiction'' where we prove a statement is \emph{false} by assuming it is true and deriving a contradiction; here we are considering the opposite form where we prove a statement to be \emph{true} by assuming it to be false and deriving a contradiction.)
 This mirrors the process of informal reasoning in classical mathematics fairly closely, though it is a bit problematic from a type-theoretic perspective (e.g.\ it fails the principles enunciated in \cref{sec:why-multicats}).
-As we will see in \cref{chap:polycats}, one can also forumlate a well-behaved type theory that it \emph{can} prove all classical tautologies, by restoring the left/right and $\meet/\join$ symmetries.
+As we will see in \cref{chap:polycats}, one can also formulate a well-behaved type theory that it \emph{can} prove all classical tautologies, by restoring the left/right and $\meet/\join$ symmetries.
 
 However, it is also valuable to observe that conversely, if we are willing to generalize our notion of ``logic'', we obtain something much more generally applicable.
 Indeed, this is really the whole point of categorical logic, as put forward in \cref{sec:intro}: we can apply ``set-like'' reasoning to objects of arbitrary categories as long as we are careful about what sort of reasoning we use.
@@ -2159,6 +2159,9 @@ Of course, any closed monoidal lattice satisfies the distributive law $A\tensor 
 \end{ex}
 
 \begin{ex}\label{ex:hilbert}
+  TODO: A whole section on this?  There should be a general notion of ``closed category'' for any suitable kind of multicategory, with a resulting combinatory logic and hilbert system.
+  \url{https://nforum.ncatlab.org/discussion/4632/closed-category/}
+
   Another way of deriving tautologies is called a \textbf{Hilbert system}.
   A Hilbert system can be formulated as a sort of type theory where the judgments all have empty context, i.e.\ are of the form $\types A$ where $A$ is a propositional formula.
   Instead of the ``modular'' left/right rules of sequent calculus or the introduction/elimination rules of natural deduction, where the rules for each connective do not refer to any other connective, a Hilbert system gives a special place to implication $\To$.
@@ -3087,6 +3090,7 @@ Thus, let us include these and also another antipode $j:A\to A$.
   Is it possible to formulate a theory for semicartesian or relevance monoidal categories in which the appropriate structural rules are admissible?
 \end{ex}
 
+TODO: \url{https://nforum.ncatlab.org/discussion/8622/church-numerals-are-realizers/}?
 
 \ChapterExercises
 
